@@ -1,0 +1,45 @@
+/* Responsive: Extra Small Screens */
+
+@media screen and (max-width: 660px) {
+  
+  .container {
+    min-width: 300px;
+  }
+  
+  /* nav */
+  .nav-pills li a {
+    font-size: smaller;
+    padding: 5px;
+  }
+  
+  .brand {
+    display: none;
+  }
+  
+  .clearfix {
+    margin-bottom: 20px;
+    padding-top: initial;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+  
+  /* headers*/
+  h3 {
+    font-size: medium;
+  }
+  h4 {
+    font-size: small;
+  }
+  
+  /* font */
+  p {
+    font-size: smaller;
+  }
+  
+  /* footer*/
+  .footer {
+    font-size: x-small;
+  }
+}
+
