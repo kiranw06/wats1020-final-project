@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Lovelace for Losers</title>
+        <title>Ada Lovelace</title>
         <meta name="description" content="Mobile friendly layout experiments.">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
@@ -92,12 +92,12 @@
                 <li role="presentation"><a href="#thoughts">Thoughts</a></li>
               </ul>
             </nav>
-            <h3 class="text-muted brand">Lovelace for Losers</h3>
+            <h3 class="text-muted brand">Ada Lovelace</h3>
           </div>
     
           <div class="jumbotron">
-            <h1>Lovelace for Losers</h1>
-            <p class="lead">This jumbotron is the future home of a really cool vector javascript animation!<br>(hopefully...) </p>
+            <h1>Ada Lovelace</h1>
+            <p class="lead">This jumbotron is the future home of a vector javascript animation!</p>
           </div>
   <!-- Home -->
           <div class="row" id="home">
@@ -105,34 +105,78 @@
               <h3>Home</h3>
             </div>
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#about" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
-              <li role="presentation"><a href="#quick-facts" aria-controls="profile" role="tab" data-toggle="tab">Quick Facts</a></li>
-            </ul>
-          
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane active" id="about">
-                <div class="col-lg-12">
-                  <h4>About</h4>
-                  <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-                </div>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="quick-fatcs">
-                <div class="col-lg-12">
-                  <h4>Quick Facts</h4>
-                  <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+            <div id="tabs" role="tabpanel">
+            
+               <ul class="nav nav-tabs" role="tablist">
+                   <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
+                   <li role="presentation"><a href="#quick-facts" aria-controls="home" role="tab" data-toggle="tab">Quick Facts</a></li>
+                </ul>
+               
+                 <!-- Tab panes -->
+             
+              <div class="tab-content">
+               <div role="tabpanel" class="tab-pane active" id="about">
+                 <h4>About</h4>
+                 <p>Augusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine. Her notes on the engine include what is recognised as the first algorithm intended to be carried out by a machine. As a result, she is often regarded as the first computer programmer. The only legitimate child of the poet Lord Byron, she was brought up by her mother. She married William, Lord King in 1835. King was made Earl of Lovelace in 1838, and Ada became Lady Lovelace. She died of uterine cancer in 1852.</p>
+               </div>
+               <div role="tabpanel" class="tab-pane" id="quick-facts">
+                 <h4>Quick Facts</h4>
+                 <dl class="dl-horizontal">
+                   <div class="row">
+                     <div class="col-xs-12 col-s-6 col-sm-6 col-lg-4">
+                       <dt>Born</dt>
+                       <dd>Augusta Ada Byron<br>
+                           10 December 1815 London, England
+                       </dd>
+                     </div>
+                     <div class="col-xs-12 col-s-6 col-sm-6 col-lg-4">
+                       <dt>Died</dt>
+                       <dd>27 November 1852 (aged 36)<br>
+                           Marylebone, London, England
+                       </dd>
+                     </div>
+                     <div class="col-xs-12 col-s-6 col-sm-6 col-lg-4">
+                       <dt>Known For</dt>
+                       <dd>Mathematics, computing</dd>
+                     </div>
+                     <div class="col-xs-12 col-s-6 col-sm-6 col-lg-4">
+                        <dt>Title</dt>
+                        <dd>Countess of Lovelace</dd>
+                     </div>
+                   </div>
+                   <div class="row">
+                     <div class="col-xs-12 col-s-6 col-sm-6 col-lg-4">
+                       <dt>Spouse(s)</dt>
+                       <dd>William King-Noel,<br> 
+                         1st Earl of Lovelace.
+                       </dd>
+                     </div>
+                     <div class="col-xs-12 col-s-6 col-sm-6 col-lg-4">
+                       <dt>Children</dt>
+                       <dd>	
+                        Byron King-Noel, Viscount Ockham and 12th Baron Wentworth<br>
+                        Anne Blunt, 15th Baroness Wentworth<br>
+                        Ralph King-Milbanke, 2nd Earl of Lovelace
+                       </dd>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-lg-4">
+                      <dt>Parents</dt>
+                      <dd>
+                        George Gordon Byron, 6th Baron Byron<br>
+                        Anne Isabella Milbanke, 11th Baroness Wentworth
+                      </dd>
+                     </div>
+                   </div>
+                 </dl>
+               </div>
+
          <!-- End tabs -->
          <div class="row" id="timeline">
           <div class="col-lg-12">
               <h3>Timeline</h3>
           </div>
           <div class="jumbotron">
-            <p class="lead">This jumbotron is the future home of a really cool animated timeline!<br>(hopefully...) </p>
+            <p class="lead">This jumbotron is the future home of an animated timeline!</p>
           </div>
          </div>
          <div class="row" id="work">
@@ -154,44 +198,55 @@
            </div>
          </div>
          <div class="row">
-           <div class="col-lg-12">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <img src="..." alt="...">
-                    <div class="carousel-caption">
-                      ...
-                    </div>
+           <div class="col-xs-12">
+             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              </ol>
+   
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="/img/Miniature_of_Ada_Byron.jpg" alt="Miniature of Ada Lovelace">
+                  <div class="carousel-caption">
+                    Childhood portait.
                   </div>
-                  <div class="item">
-                    <img src="..." alt="...">
-                    <div class="carousel-caption">
-                      ...
-                    </div>
-                  </div>
-                  ...
                 </div>
-
+                <div class="item">
+                  <img src="/img/Ada_Byron_aged_seventeen_(1832).jpg" alt="Ada Lovelace, age 17.">
+                  <div class="carousel-caption">
+                    Ada, age 17.
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="/img/Ada_Lovelace_in_1852.jpg" alt="Portrait of Ada Lovelace in 1852">
+                  <div class="carousel-caption">
+                    Ada Lovelace in 1852.
+                  </div>
+                </div>
+                <div class="item">
+                 <img src="/img/Ada_Lovelace.jpg" alt="Colorful portait painting of adult Ada Lovelace.">
+                 <div class="carousel-caption">
+                   Adult Ada Lovelace.
+                 </div>
+                </div>
+               </div>
                 <!-- Controls -->
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
                 <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
                   <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
-              </div>
+             </div>
            </div>
          </div>
+                
          <div class="row" id="thoughts">
           <div class="col-lg-12">
               <h3>Thoughts</h3>
@@ -210,19 +265,19 @@
            <div class="row">
              <div class="col-xs-6 col-sm-4">
                 <p>&copy; 2016 Kira Wilson<br>
-                  <a href="kiranw.com">kiranw.com</a><br>
-                  <a href="github.com/kiranw06">github profile</a>
+                  <a href="http://kiranw.com/">kiranw.com</a><br>
+                  <a href="https://github.com/kiranw06">github profile</a>
                 </p>
               </div>
               <div class="col-xs-6 col-sm-4">
                 <p>Info provided by: Ada Lovelace Wikipedia page.<br>
-                  <a href="en.wikipedia.org/wiki/Ada_Lovelace">wikipedia</a>
+                  <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">wikipedia</a>
                 </p>
               </div>
               <div class="col-xs-12 col-sm-4">
                 <p>Seattle University Web Dev project.<br>
-                  <a href="webdev.seattleu.edu/">website</a><br>
-                  <a href="meetup.com/Seattle-University-Web-Developers-Meetup/">meetup</a>
+                  <a href="http://webdev.seattleu.edu/">website</a><br>
+                  <a href="http://www.meetup.com/Seattle-University-Web-Developers-Meetup/">meetup</a>
                 </p>
               </div>
             </div>
