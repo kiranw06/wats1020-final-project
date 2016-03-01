@@ -1,0 +1,10 @@
+@media screen and (max-width: 1199px) {
+  .jumbotron {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .header.clearfix {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}

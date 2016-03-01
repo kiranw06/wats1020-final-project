@@ -1,5 +1,5 @@
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 991px) {
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -13,6 +13,8 @@
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
+    margin-top: 30px;
+    margin-bottom: 30px;
     border-bottom: 0;
   }
 }

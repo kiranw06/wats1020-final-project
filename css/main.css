@@ -4,6 +4,8 @@
    Author's custom styles
    ========================================================================== */
 
+/* Main Styling: targeting medium and large screens */
+
 /* Space out content a bit */
 body {
   padding-top: 20px;
@@ -38,11 +40,7 @@ body {
 }
 
 /* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
+
 .container-narrow > hr {
   margin: 30px 0;
 }
