@@ -3,11 +3,63 @@ $( document ).ready(function() {
   
   // tabs
   $('#my-tabs').click(function (e) {
-    e.preventDefault()
+    e.preventDefault();
     $(this).tab('show')
   });
   
+      // TODO: Create a function to listen for clicks on all the "View Details"
+    // buttons so that when a user clicks a "View Details" button they see
+    // the content contained in the elements with the class "details" in the
+    // proper part of the screen.
+    
+                                                                  //    1. When user clicks a "view details" button, 
+                                                                  //    find the parent of that element.
+    $ ('.view-details').on('click' , function(event) {
+      console.log(event);
+      var targetElement = event.target;
+      var container = targetElement.parentElement.parentElement;  //    TODO use multiplier 
+                                                                  //    2. Within that parent, find all the elements that 
+                                                                  //    have the class `details`.
+      $ (container).find('.details').each( function(index, el) {
+                                                                  //    3. Toggle visibility of all the elements within that 
+                                                                  //    parent with the class `details`.
+          if ($(el).is(':visible')) {
+            $(el).fadeOut();
+                                                                  //  reduces column width while article is hidden 
+            var contractDetails = $("div.view-hide").removeClass("col-lg-12").addClass("col-sm-6 col-md-6 col-lg-3"); 
+            console.log(contractDetails);
+            targetElement.innerHTML = "View Details"
+                                                                  //     4. Change the text of the "view details" button 
+                                                                  //     to read "hide details" so the user
+                                                                  //     understands they can hide the text again.
+          } else {
+                                                                  //  expands column width while article is shown
+            var expandDetails = $("div.view-hide").removeClass("col-sm-6 col-md-6 col-lg-3").addClass("col-lg-12");  
+            console.log(expandDetails);
+            $(el).fadeIn();
+            targetElement.innerHTML = "Hide Details"
+          }
+      });
+     });
   
+});
+
+                    
+// twitter timeline
+
+                                                         
+twttr.widgets.createTimeline(
+  "708133299865001984",
+  document.getElementById("container"),
+  {
+    height: 400,
+    chrome: "transparent",
+    linkColor: "#820bbb",
+    borderColor: "#55acee"
+  }
+);
+
+
   // Compatibility and Progressive Enhancement plugins
   
   // Session Storage Plugin

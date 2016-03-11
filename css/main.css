@@ -1,10 +1,23 @@
 
 
 /* ==========================================================================
-   Author's custom styles
+   Visual Styling
    ========================================================================== */
 
-/* Main Styling: targeting medium and large screens */
+.details {
+    display: none;
+}
+
+/* tweet frame width */
+#twitter-widget-0 .timeline-widget {
+    float: right;
+}
+
+
+
+/* ==========================================================================
+   Main Responsive Styling: targeting medium and large screens
+   ========================================================================== */
 
 /* Space out content a bit */
 body {
