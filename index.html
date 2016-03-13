@@ -9,19 +9,15 @@
         <title>Ada Lovelace</title>
         <meta name="description" content="Mobile friendly layout experiments.">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <!--Outsite Vendor Libraries-->
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/cntl.css">
         <style>
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
         </style>
-        <!--twitter width-->
-        <style type="text/css">
-          iframe[id^='twitter-widget-']{ width:100% !important;}
-        </style>
-
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/extra-small.css">
@@ -36,62 +32,14 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-      <!-- TODO:
-
-                Create a mobile friendly page header. This may be a navigation
-                bar, but it does not have to be a navigation bar. In fact, it
-                may be more beneficial to try to mock up something more like
-                what you hope to see in your final projects header (title, score,
-                etc.).
-      -->
-
-      <!-- TODO:
-
-                Create a mobile friendly gallery layout that displays a set of
-                at least 24 images. Each image should be displayed along with some
-                metadata: title of image and a brief description. You may use
-                placeholder text (see http://lipsum.com) for both if you do not
-                have titles or descriptions available.
-
-                You may use any HTML structures you want, and this file has
-                Bootstrap linked in, so you may use the responsive layout and
-                image tools that Bootstrap includes.
-      -->
-
-      <!-- TODO:
-
-                Create a mobile-friendly Footer that includes three columns. The
-                columns should contain the following content.
-
-                Column 1:
-
-                  This description: "This page is meant to provide an experimental
-                  proof of concept for a mobile-friendly layout that can be used
-                  to inform the creation of a card matching game."
-
-                Column 2:
-
-                  A list of styled links. These links will be imaginary, and
-                  you should focus on styling them and laying them out in a
-                  way that works well when viewed in both mobile and desktop
-                  browsers.
-
-                Column 3:
-
-                  A table of high scores. Populate at least five rows of the
-                  table with imaginary player names and high scores. The table
-                  should have two columns: name and score.
-      -->
-      
  <!-- start containter -->
       
         <div class="container">
           <div class="header clearfix">
             <nav>
               <ul class="nav nav-pills pull-right ">
-                <li role="presentation" class="active"><a href="#home">Home</a></li>
+                <li role="presentation" class="active"><a href="#about">About</a></li>
                 <li role="presentation"><a href="#timeline">Timeline</a></li>
-                <li role="presentation"><a href="#work">Work</a></li>
                 <li role="presentation"><a href="#bio">Bio</a></li>
                 <li role="presentation"><a href="#thoughts">Thoughts</a></li>
               </ul>
@@ -101,33 +49,34 @@
     
           <div class="jumbotron">
             <h1>Ada Lovelace</h1>
-            <p class="lead">This jumbotron is the future home of a vector javascript animation!</p>
+            <p class="lead">The Enchantress of Number.</p>
           </div>
-  <!-- Home -->
-          <div class="row" id="home">
+  <!-- About -->
+          <div class="row" id="about">
             <div class="col-lg-12">
-              <h3>Home</h3>
+              <h3>About</h3>
             </div>
             <!-- Nav tabs -->
             <div id="tabs" role="tabpanel">
-            
                <ul class="nav nav-tabs" role="tablist">
-                   <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">About</a></li>
-                   <li role="presentation"><a href="#quick-facts" aria-controls="home" role="tab" data-toggle="tab">Quick Facts</a></li>
+                   <li role="presentation" class="active"><a href="#summary" aria-controls="about" role="tab" data-toggle="tab">Summary</a></li>
+                   <li role="presentation"><a href="#quick-facts" aria-controls="about" role="tab" data-toggle="tab">Quick Facts</a></li>
+                   <li role="presentation"><a href="#work" aria-controls="about" role="tab" data-toggle="tab">Work</a></li>
                 </ul>
+             </div>
                
                  <!-- Tab panes -->
              
               <div class="tab-content">
-               <div role="tabpanel" class="tab-pane active" id="about">
-                 <h4>About</h4>
+               <div role="tabpanel" class="tab-pane active" id="summary">
+                 <h4>Summary</h4>
                  <p>Augusta Ada King, Countess of Lovelace (née Byron; 10 December 1815 – 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage's early mechanical general-purpose computer, the Analytical Engine. Her notes on the engine include what is recognised as the first algorithm intended to be carried out by a machine. As a result, she is often regarded as the first computer programmer. The only legitimate child of the poet Lord Byron, she was brought up by her mother. She married William, Lord King in 1835. King was made Earl of Lovelace in 1838, and Ada became Lady Lovelace. She died of uterine cancer in 1852.</p>
                </div>
                <div role="tabpanel" class="tab-pane" id="quick-facts">
-                 <h4>Quick Facts</h4>
                  <dl class="dl-horizontal">
                    <div class="row">
                      <div class="col-xs-12 col-s-6 col-sm-6 col-lg-4">
+                       <h4>Quick Facts</h4>
                        <dt>Born</dt>
                        <dd>Augusta Ada Byron<br>
                            10 December 1815 London, England
@@ -173,76 +122,162 @@
                    </div>
                  </dl>
                </div>
-
-         <!-- End tabs -->
+               <div role="tabpanel" class="tab-pane" id="work">
+                 <h4>Work</h4>
+                 <p>Ada Lovelace was born 10 December 1815 as the only legitimate child of the poet George Gordon, Lord Byron and his wife Anne Isabella Milbanke ("Annabella"), Baroness Wentworth.[4] All Byron's other children were born out of wedlock to other women.[5] Byron separated from his wife a month after Ada was born and left England forever four months later, eventually dying of disease in the Greek War of Independence when Ada was eight years old. Ada's mother remained bitter towards Lord Byron and promoted Ada's interest in mathematics and logic in an effort to prevent her from developing what she saw as the insanity seen in her father, but Ada remained interested in him despite this (and was, upon her eventual death, buried next to him at her request). Ada described her approach as "poetical science"[6] and herself as an "Analyst (& Metaphysician)".[7] As a teenager, her mathematical talents led her to an ongoing working relationship and friendship with fellow British mathematician Charles Babbage, also known as 'the father of computers', and in particular, Babbage's work on the Analytical Engine. Between 1842 and 1843, she translated an article by Italian military engineer Luigi Menabrea on the engine, which she supplemented with an elaborate set of notes, simply called Notes.These notes contain what many consider to be the first computer program—that is, an algorithm designed to be carried out by a machine. Lovelace's notes are important in the early history of computers. She also developed a vision of the capability of computers to go beyond mere calculating or number-crunching, while many others, including Babbage himself, focused only on those capabilities.[8] Her mind-set of "poetical science" led her to ask questions about the Analytical Engine (as shown in her notes) examining how individuals and society relate to technology as a collaborative tool.[5]</p>
+               </div>
+             </div>
+            </div>  
+<!-- End tabs -->
          <div class="row" id="timeline">
           <div class="col-lg-12">
               <h3>Timeline</h3>
-          </div>
-          <div class="jumbotron">
-            <p class="lead">This jumbotron is the future home of an animated timeline!</p>
-          </div>
-         </div>
-         <div class="row" id="work">
-          <div class="col-lg-12">
-            <h3>Work</h3>
-            <p>Ada Lovelace was born 10 December 1815 as the only legitimate child of the poet George Gordon, Lord Byron and his wife Anne Isabella Milbanke ("Annabella"), Baroness Wentworth.[4] All Byron's other children were born out of wedlock to other women.[5] Byron separated from his wife a month after Ada was born and left England forever four months later, eventually dying of disease in the Greek War of Independence when Ada was eight years old. Ada's mother remained bitter towards Lord Byron and promoted Ada's interest in mathematics and logic in an effort to prevent her from developing what she saw as the insanity seen in her father, but Ada remained interested in him despite this (and was, upon her eventual death, buried next to him at her request). Ada described her approach as "poetical science"[6] and herself as an "Analyst (& Metaphysician)".[7] As a teenager, her mathematical talents led her to an ongoing working relationship and friendship with fellow British mathematician Charles Babbage, also known as 'the father of computers', and in particular, Babbage's work on the Analytical Engine. Between 1842 and 1843, she translated an article by Italian military engineer Luigi Menabrea on the engine, which she supplemented with an elaborate set of notes, simply called Notes.These notes contain what many consider to be the first computer program—that is, an algorithm designed to be carried out by a machine. Lovelace's notes are important in the early history of computers. She also developed a vision of the capability of computers to go beyond mere calculating or number-crunching, while many others, including Babbage himself, focused only on those capabilities.[8] Her mind-set of "poetical science" led her to ask questions about the Analytical Engine (as shown in her notes) examining how individuals and society relate to technology as a collaborative tool.[5]</p>
-          </div>
-         </div>
-         <div class="row">
-           <div class="col-xs-12">
-             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              </ol>
-   
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="/img/Miniature_of_Ada_Byron.jpg" alt="Miniature of Ada Lovelace">
-                  <div class="carousel-caption">
-                    Childhood portait.
+             <div class="cntl">
+                <span class="cntl-bar cntl-center">
+                  <span class="cntl-bar-fill"></span>
+                </span>
+              
+                <div class="cntl-states">
+              
+                  <div class="cntl-state">
+                    <div class="cntl-content">
+                      <h4>Birthdate</h4>
+                      <p>Ada Lovelace was born in London England on December 10th.</p>
+                    </div>
+                    <div class="cntl-icon cntl-center">1815</div>
                   </div>
-                </div>
-                <div class="item">
-                  <img src="/img/Ada_Byron_aged_seventeen_(1832).jpg" alt="Ada Lovelace, age 17.">
-                  <div class="carousel-caption">
-                    Ada, age 17.
+              
+                  <div class="cntl-state">
+                    <div class="cntl-content">
+                      <h4>Education</h4>
+                      <p>When she was seventeen, her mathematical abilities began to emerge, and her interest in mathematics dominated the majority of her adult life.</p>
+                    </div>
+                    <div class="cntl-icon cntl-center">1832</div>
+                  </div> 
+                  
+                  <div class="cntl-state">
+                    <div class="cntl-content">
+                      <h4>Establishes Mentors</h4>
+                      <p>As a teenager, her mathematical talents led her to an ongoing working relationship and friendship with fellow British mathematician Charles Babbage, also known as 'the father of computers', and in particular, Babbage's work on the Analytical Engine. Lovelace became close friends with her tutor Mary Somerville, who would introduce her to Babbage in 1833.</p>
+                    </div>
+                    <div class="cntl-icon cntl-center">1833</div>
                   </div>
-                </div>
-                <div class="item">
-                  <img src="/img/Ada_Lovelace_in_1852.jpg" alt="Portrait of Ada Lovelace in 1852">
-                  <div class="carousel-caption">
-                    Ada Lovelace in 1852.
+                  
+                  <div class="cntl-state">
+                    <div class="cntl-content">
+                      <h4>The Analytical Machine</h4>
+                      <p>During a nine-month period in 1842–43, Lovelace translated the Italian mathematician Luigi Menabrea's article on Charles Babbage's newest proposed machine, the Analytical Engine. With the article, she appended an elaborate set of notes.  Explaining the Analytical Engine's function was a difficult task, as even many other scientists did not really grasp the concept and the British establishment was uninterested in it.</p>
+                    </div>
+                    <div class="cntl-icon cntl-center">1842</div>
                   </div>
+                  
+                  <div class="cntl-state">
+                    <div class="cntl-content">
+                      <h4>The First Computer Program</h4>
+                      <p>Lovelace's augmented work titled Notes, were added to the translation and published. The notes are around three times longer than the article itself and include (in Section G), in complete detail, a method for calculating a sequence of Bernoulli numbers. These notes, which are more extensive than Menabrea's paper, were then published in Taylor's Scientific Memoirs under the initialism AAL. Lovelace's notes are important in the early history of computers, and her work was well received at the time.</p>
+                    </div>
+                    <div class="cntl-icon cntl-center">1843</div>
+                  </div>
+                  
+                  <div class="cntl-state">
+                    <div class="cntl-content">
+                      <h4>Study of the Mind and Electromagnetism</h4>
+                      <p>Throughout her life, Lovelace was strongly interested in scientific developments and popular research of the day, including phrenology and mesmerism. After her work with Babbage, Lovelace continued to work on other projects such as a mathematical model for how the brain gives rise to thoughts and nerves to feelings ("a calculus of the nervous system"). She never achieved this, however, as part of her research of this subject, she visited electrical engineer Andrew Crosse in 1844 to learn how to carry out electrical experiments.  In the same year, she drafted an unpublished review of a paper by Baron Karl von Reichenbach, Researches on Magnetism.</p>
+                    </div>
+                    <div class="cntl-icon cntl-center">1844</div>
+                  </div>
+                  
+                  <div class="cntl-state">
+                    <div class="cntl-content">
+                      <h4>Study of Music and Mathematics</h4>
+                      <p>The year before her cancer struck, she wrote to her mother mentioning "certain productions" she was working on regarding the relation of maths and music.</p>
+                    </div>
+                    <div class="cntl-icon cntl-center">1851</div>
+                  </div>
+                  
+                  <div class="cntl-state">
+                    <div class="cntl-content">
+                      <h4>Death</h4>
+                      <p>On November 27th, Ada Lovelace passed in London, England. She she died of uterine cancer at age 36.</p>
+                    </div>
+                    <div class="cntl-icon cntl-center">1852</div>
+                  </div>
+                  
+                  <div class="cntl-state">
+                    <div class="cntl-content">
+                      <h4>Notes Republished</h4>
+                      <p>More than a century after her death, Lovelace's notes on Babbage's Analytical Engine were republished. The engine has now been recognised as an early model for a computer and her notes as a description of a computer and software. Based on this work, Lovelace is now widely considered the first computer programmer and her method is recognised as the world's first computer program.</p>
+                    </div>
+                    <div class="cntl-icon cntl-center">1953</div>
+                  </div>
+                  
+                  <div class="cntl-state">
+                    <div class="cntl-content">
+                      <h4>Ada Lovelace Day Declared</h4>
+                      <p>Ada Lovelace Day was founded by Suw Charman-Anderson in 2009 and aims to raise the profile of women in science, technology, engineering and math. This international day of celebration helps people learn about the achievements of women in STEM.</p>
+                    </div>
+                    <div class="cntl-icon cntl-center">2009</div>
+                  </div>
+              
                 </div>
-                <div class="item">
-                 <img src="/img/Ada_Lovelace.jpg" alt="Colorful portait painting of adult Ada Lovelace.">
-                 <div class="carousel-caption">
-                   Adult Ada Lovelace.
-                 </div>
-                </div>
-               </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-             </div>
-           </div>
+              
+              </div>
+            </div>
          </div>
-                
          <div class="row" id="bio">
            <div class="col-lg-12">
              <h3>Biography</h3>
            </div>
+             <div class="col-xs-12">
+               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+   
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="/img/Miniature_of_Ada_Byron.jpg" alt="Miniature of Ada Lovelace">
+                    <div class="carousel-caption">
+                      Childhood portait.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/img/Ada_Byron_aged_seventeen_(1832).jpg" alt="Ada Lovelace, age 17.">
+                    <div class="carousel-caption">
+                      Ada, age 17.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/img/Ada_Lovelace_in_1852.jpg" alt="Portrait of Ada Lovelace in 1852">
+                    <div class="carousel-caption">
+                      Ada Lovelace in 1852.
+                    </div>
+                  </div>
+                  <div class="item">
+                   <img src="/img/Ada_Lovelace.jpg" alt="Colorful portait painting of adult Ada Lovelace.">
+                   <div class="carousel-caption">
+                     Adult Ada Lovelace.
+                   </div>
+                  </div>
+                 </div>
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+               </div>
+             </div>
+           </div>
+              
+  <!--Bio Veiw/Hide Sections-->
            <div class="view-hide col-sm-6 col-md-6 col-lg-3">
              <h4>Childhood</h4>
               <p class="details">Byron expected his baby to be a "glorious boy" and was disappointed when his wife gave birth to a girl.[9] Augusta was named after Byron's half-sister, Augusta Leigh, and was called "Ada" by Byron himself.[10] Ada, aged four On 16 January 1816 Annabella, at Byron's behest, left for her parents' home at Kirkby Mallory taking one-month-old Ada with her.[9] Although English law at the time gave fathers full custody of their children in cases of separation, Byron made no attempt to claim his parental rights[11] but did request that his sister keep him informed of Ada's welfare.[12] On 21 April Byron signed the Deed of Separation, although very reluctantly, and left England for good a few days later.[13] Aside from an acrimonious separation, Annabella continually made allegations about Byron's immoral behaviour throughout her life.[14] This set of events made Ada famous in Victorian society. Byron did not have a relationship with his daughter, and never saw her again. He died in 1824 when she was eight years old. Her mother was the only significant parental figure in her life.[15] Ada was not shown the family portrait of her father (covered in green shroud) until her twentieth birthday.[16] Her mother became Baroness Wentworth in her own right in 1856. Annabella did not have a close relationship with the young Ada, and often left her in the care of her own mother Judith, Hon. Lady Milbanke, who doted on her grandchild. However, because of societal attitudes of the time—which favoured the husband in any separation, with the welfare of any child acting as mitigation—Annabella had to present herself as a loving mother to the rest of society. This included writing anxious letters to Lady Milbanke about Ada's welfare, with a cover note saying to retain the letters in case she had to use them to show maternal concern.[17] In one letter to Lady Milbanke, she referred to Ada as "it": "I talk to it for your satisfaction, not my own, and shall be very glad when you have it under your own."[18] In her teenage years, several of her mother's close friends watched Ada for any sign of moral deviation. Ada dubbed these observers the "Furies", and later complained they exaggerated and invented stories about her.[19] Ada, aged seventeen, 1832 Ada was often ill, beginning in early childhood. At the age of eight, she experienced headaches that obscured her vision.[10] In June 1829, she was paralysed after a bout of measles. She was subjected to continuous bed rest for nearly a year, which may have extended her period of disability. By 1831 she was able to walk with crutches. Despite being ill Ada developed her mathematical and technological skills. At age 12 this future "Lady Fairy", as Charles Babbage affectionately called her, decided she wanted to fly. Ada went about the project methodically, thoughtfully, with imagination and passion. Her first step in February 1828, was to construct wings. She investigated different material and sizes. She considered various materials for the wings: paper, oilsilk, wires and feathers. She examined the anatomy of birds to determine the right proportion between the wings and the body. She decided to write a book Flyology illustrating, with plates, some of her findings. She decided what equipment she would need, for example, a compass, to "cut across the country by the most direct road", so that she could surmount mountains, rivers and valleys. Her final step was to integrate steam with the "art of flying".[5] In early 1833 Ada had an affair with a tutor and, after being caught, tried to elope with him. The tutor's relatives recognised her and contacted her mother. Annabella and her friends covered the incident up to prevent a public scandal.[20] Ada never met her younger half-sister, Allegra, the daughter of Lord Byron and Claire Clairmont. Allegra died in 1822 at the age of five. Ada did have some contact with Elizabeth Medora Leigh, the daughter of Byron's half-sister Augusta Leigh, who purposely avoided Ada as much as possible when introduced at Court.[21]</p>
@@ -263,7 +298,6 @@
              <p class="details"><img class="pull-right img-thumbnail" src="img/bug.jpg">Lovelace died at the age of 36 – the same age that her father had died – on 27 November 1852,[41] from uterine cancer probably exacerbated by bloodletting by her physicians.[42] The illness lasted several months, in which time Annabella took command over whom Ada saw, and excluded all of her friends and confidants. Under her mother's influence, she had a religious transformation and was coaxed into repenting of her previous conduct and making Annabella her executor.[43] She lost contact with her husband after she confessed something to him on 30 August which caused him to abandon her bedside. What she told him is unknown.[44] She was buried, at her request, next to her father at the Church of St. Mary Magdalene in Hucknall, Nottinghamshire.</p>
                 <p><a class="btn btn-default view-details" role="button">View details &raquo;</a></p>
            </div>
-         </div>
                 
                 
          <div class="row" id="thoughts">
@@ -277,8 +311,7 @@
                data-widget-id="708133299865001984"
                data-aria-polite="assertive"
                data-chrome="transparent noborders"
-               height="400px">    <!-- style -->
-               
+               height="400px">
                #AdaLovelace Tweets
             </a>
           </div>
@@ -330,7 +363,7 @@
               
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
-
+      <script src="js/vendor/jquery.cntl.js"></script>
       <script src="js/vendor/bootstrap.min.js"></script>
 
       <script src="js/main.js"></script>

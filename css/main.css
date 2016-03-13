@@ -4,14 +4,23 @@
    Visual Styling
    ========================================================================== */
 
+/* BIOGRAPHY*/
+
 .details {
     display: none;
 }
 
-/* tweet frame width */
+/* TIMELINE */
+
+.cntl-icon {
+  font-size: 25px;
+}
+
+/* THOUGHTS */
 #twitter-widget-0 .timeline-widget {
     float: right;
 }
+
 
 
 
