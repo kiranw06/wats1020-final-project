@@ -1,7 +1,7 @@
 // Handler for .ready() called.
 $( document ).ready(function() {
   
-   tabs
+ // tabs
    $('#tabs').click(function (e) {
      $(this).tab('show')
    });
@@ -9,8 +9,6 @@ $( document ).ready(function() {
   
   
 // timeline
-  
-  $(document).ready(function(e){
   
   $('.cntl').cntl({
   
@@ -26,7 +24,6 @@ $( document ).ready(function() {
     onreveal: null
 
     });
-  });
   
   
     // TODO: Create a function to listen for clicks on all the "View Details"
@@ -50,7 +47,7 @@ $( document ).ready(function() {
                                                                       //  reduces column width while article is hidden 
                 var contractDetails = $("div.view-hide").removeClass("col-lg-12").addClass("col-sm-6 col-md-6 col-lg-3"); 
                 console.log(contractDetails);
-                targetElement.innerHTML = "View Details"
+                targetElement.innerHTML = "View Details";
                                                                       //     4. Change the text of the "view details" button 
                                                                       //     to read "hide details" so the user
                                                                       //     understands they can hide the text again.
@@ -63,6 +60,29 @@ $( document ).ready(function() {
               }
           });
          });
+        
+          
+ //   Hover   
+      $ ('.cntl-content').on('click' , function(event) {
+          console.log(event);
+          var targetElement = event.target;
+          var container = targetElement.parentElement.parentElement; 
+        
+          $ (container).find('.details').each( function(index, el) {
+                                                                      //    3. Toggle visibility of all the elements within that 
+                                                                      //    parent with the class `details`.
+              if ($(el).is(':visible')) {
+                  $(el).fadeOut();
+                                                                      //  reduces column width while article is hidden 
+                                                                      //     4. Change the text of the "view details" button 
+                                                                      //     to read "hide details" so the user
+                                                                      //     understands they can hide the text again.
+              } else {
+                                                                    //  expands column width while article is shown
+                $(el).fadeIn();
+              }
+          });
+        });
                     
 
 
