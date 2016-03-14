@@ -4,6 +4,32 @@
    Visual Styling
    ========================================================================== */
 
+/*NAV*/
+.navbar-fixed-top {
+  padding: 1.5%;
+  background-color: white;
+}
+
+#about, #timeline, #bio, #thoughts {
+ padding-top: 10%;
+ padding-bottom: initial;
+}
+
+/*JUMBOTRON*/
+
+.jumbotron {
+  height: 100%;
+  background-image: url('/img/Ada_Lovelace.jpg');
+  background-size: cover;
+  background-position: 75% 15%;
+}
+
+.jumbotron h1, .jumbotron p.lead  {
+ position: relative;
+ bottom: -50%; 
+}
+
+
 /* BIOGRAPHY*/
 
 .details {
@@ -44,7 +70,6 @@ body {
 
 /* Custom page header */
 .header {
-  padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
 /* Make the masthead heading the same height as the navigation */

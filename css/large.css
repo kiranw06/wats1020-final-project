@@ -1,5 +1,5 @@
 @media screen and (min-width: 1200px) {
-  .container{
+  .container {
     min-width: 50%;
     max-width: 1000px;
   }
@@ -12,3 +12,8 @@
     margin-bottom: 30px;
   }
 }
+
+ .page-container {
+    position: relative;
+    top: 8%;
+  }

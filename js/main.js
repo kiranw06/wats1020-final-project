@@ -63,9 +63,6 @@ $( document ).ready(function() {
               }
           });
          });
-
-    });
-
                     
 
 
@@ -1586,10 +1583,7 @@ $( document ).ready(function() {
     })();
 
   } // if
-;
-
-// animation compatibilty 
-
+});
 
 
 
