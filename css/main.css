@@ -19,7 +19,7 @@
 
 .jumbotron {
   height: 100%;
-  background-image: url('/img/Ada_Lovelace.jpg');
+  background-image: url("/img/Ada_Lovelace.jpg");
   background-size: cover;
   background-position: 75% 15%;
 }
